@@ -204,7 +204,7 @@ class HttpUtils {
 
             $out .= "POST ${url} HTTP/1.1\r\n";
             $out .= "Host: ${parseUrl['host']}\r\n";
-            $out .= "Content-type:application/x-www-form-urlencoded\r\n";
+            $out .= "Content-type:application/json\r\n";
 
             // 拼接参数
             if ($param) {
