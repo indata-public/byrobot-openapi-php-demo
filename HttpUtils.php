@@ -212,6 +212,7 @@ class HttpUtils {
                 (Int)$lengthData = 0;
 
                 $postData = trim(json_encode($param));
+                var_dump($postData);
                 $lengthData = strlen($postData);
 
                 $out .= "Accept: application/json\r\n";

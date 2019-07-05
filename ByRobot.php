@@ -10,9 +10,9 @@ include './HttpUtils.php';
 
 
 //TODO app key  需要修改
-$APP_KEY = "3ycsEBs2TjetdhWS";
+$APP_KEY = "xxxxxxxxxxxxx";
 //TODO app SECRET  需要修改
-$APP_SECRET = "qCGkb4Hco7jjjnh7T5scDQoWpsqX59";
+$APP_SECRET = "xxxxxxxxxxxxxxxxxx";
 //线上环境
 $BASE_URL = "http://api.byrobot.cn";
 $byRobot_OpenApi = new HttpUtils();
