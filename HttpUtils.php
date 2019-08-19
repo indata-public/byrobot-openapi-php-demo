@@ -40,11 +40,14 @@ class HttpUtils {
 
             if ($parseUrl ['scheme'] == 'https') {
                 $port = empty($parseUrl ['port']) ? 443 : $parseUrl ['port'];
-                $host = 'ssl://' . $host;
+                $host = $parseUrl ['host'];
+                $host = 'ssl://'.$host;
             } else {
                 $port = empty($parseUrl ['port']) ? 80 : $parseUrl ['port'];
                 $host = $parseUrl ['host'];
             }
+
+            print_r($port);
 
             // 执行连接
             $fp = fsockopen($host, $port, $errno, $errorMsg, $timeout);
